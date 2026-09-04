@@ -5,7 +5,7 @@ length, weight, temperature, volume, area, speed, time, and digital
 storage — packaged as a Docker container.
 
 
-<img width="1916" height="864" alt="image" src="https://github.com/user-attachments/assets/141428c6-31b7-4436-9be0-f589af84859e" />
+<img width="1267" height="864" alt="Screenshot 2026-09-05 005911" src="https://github.com/user-attachments/assets/cbc7e604-65d2-4eca-b862-7026a3bcbb8a" />
 
 
 ## 1. What's inside
