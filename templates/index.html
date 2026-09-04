@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Unit Bench — number &amp; unit converter</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+  <div class="page-heading">
+    <h1>Unit Bench</h1>
+  </div>
+
+  <main class="panel">
+    <div class="panel-header">
+      <h2>Convert a number between units</h2>
+      <span id="category-label">length</span>
+    </div>
+
+    <nav class="tabs" id="tabs" aria-label="Unit category"></nav>
+
+    <div class="bench">
+      <div class="readout input">
+        <label for="input-value">From</label>
+        <input type="text" id="input-value" inputmode="decimal" value="1" autocomplete="off" />
+        <select id="from-unit"></select>
+      </div>
+
+      <button class="swap" id="swap-btn" title="Swap units" aria-label="Swap units">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 7h11l-3-3M17 17H6l3 3"/>
+        </svg>
+      </button>
+
+      <div class="readout output">
+        <label for="output-value">To</label>
+        <input type="text" id="output-value" readonly tabindex="-1" />
+        <select id="to-unit"></select>
+      </div>
+    </div>
+
+    <div class="ruler" aria-hidden="true">
+      <svg preserveAspectRatio="none" viewBox="0 0 600 14">
+        <line x1="0" y1="13" x2="600" y2="13" stroke="currentColor" stroke-width="1"/>
+        <g stroke="currentColor" stroke-width="1" id="ruler-ticks"></g>
+      </svg>
+    </div>
+
+    <p class="calibration" id="calibration-note"></p>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
