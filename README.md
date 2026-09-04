@@ -31,7 +31,11 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open **http://localhost:5000** in a browser.
+Then open in a browser.
+
+```bash
+http://localhost:5000
+```
 
 ## 3. Base image
 
