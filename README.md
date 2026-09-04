@@ -4,9 +4,6 @@ A small, dependency-light web app that converts numbers between units —
 length, weight, temperature, volume, area, speed, time, and digital
 storage — packaged as a Docker container.
 
-Built as an internship task to demonstrate containerizing a simple web
-application: a working app, a Dockerfile, an image build, and running
-the app consistently inside an isolated container.
 
 ![screenshot placeholder](#) <!-- optional: add a screenshot here -->
 
