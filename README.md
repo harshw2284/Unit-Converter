@@ -59,11 +59,8 @@ What happens during the build (see the `Dockerfile` for the exact steps):
    ordered before copying the rest of the code so Docker can reuse the
    cached dependency layer when only the app code changes.
 4. Copies `app.py`, `templates/`, and `static/` into the image.
-5. Creates and switches to a non-root user (`appuser`) to run the app —
-   good practice so the container doesn't run as root.
-6. Declares port `5000` with `EXPOSE`.
-7. Adds a `HEALTHCHECK` that pings `/healthz`.
-8. Sets the startup command: `python app.py`.
+5. Declares port `5000` with `EXPOSE`.
+6. Sets the startup command: `python app.py`.
 
 ## 5. Running the container
 
