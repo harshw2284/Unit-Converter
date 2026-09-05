@@ -55,9 +55,7 @@ docker build -t unit-bench:latest .
 What happens during the build (see the `Dockerfile` for the exact steps):
 1. Starts from `python:3.11-slim`.
 2. Sets `/app` as the working directory.
-3. Copies `requirements.txt` first and installs dependencies — this is
-   ordered before copying the rest of the code so Docker can reuse the
-   cached dependency layer when only the app code changes.
+3. Copies `requirements.txt` first and installs dependencies.
 4. Copies `app.py`, `templates/`, and `static/` into the image.
 5. Declares port `5000` with `EXPOSE`.
 6. Sets the startup command: `python app.py`.
