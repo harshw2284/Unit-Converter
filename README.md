@@ -24,7 +24,7 @@ storage — packaged as a Docker container.
 
 All the actual math (the conversions) happens client-side in JavaScript.
 
-## 2. Running it without Docker (optional, for local dev)
+## 2. Running it on local Environment
 
 ```bash
 pip install -r requirements.txt
