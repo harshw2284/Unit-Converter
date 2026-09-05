@@ -15,13 +15,12 @@ storage — packaged as a Docker container.
 
 | Piece | Purpose |
 |---|---|
-| `app.py` | Tiny Flask backend. Its only job is to serve the frontend page and a `/healthz` endpoint. |
+| `app.py` | Tiny Flask backend. Its only job is to serve the frontend page. |
 | `templates/index.html` | The converter page markup. |
 | `static/style.css` | All visual styling. |
 | `static/script.js` | Conversion data (unit factors) and all interaction logic — runs entirely in the browser. |
-| `requirements.txt` | Python dependencies (just Flask). |
+| `requirements.txt` | Python dependencies. |
 | `Dockerfile` | Builds the container image. |
-| `.dockerignore` | Keeps the build context clean. |
 
 All the actual math (the conversions) happens client-side in JavaScript.
 The Flask server exists only to serve the page — this keeps the backend
