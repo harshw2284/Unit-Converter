@@ -23,8 +23,6 @@ storage — packaged as a Docker container.
 | `Dockerfile` | Builds the container image. |
 
 All the actual math (the conversions) happens client-side in JavaScript.
-The Flask server exists only to serve the page — this keeps the backend
-intentionally small and easy to read for a first Docker project.
 
 ## 2. Running it without Docker (optional, for local dev)
 
