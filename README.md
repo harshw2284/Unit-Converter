@@ -4,6 +4,8 @@ A small, dependency-light web app that converts numbers between units —
 length, weight, temperature, volume, area, speed, time, and digital
 storage — packaged as a Docker container.
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+
 
 <img width="1267" height="864" alt="Screenshot 2026-09-05 005911" src="https://github.com/user-attachments/assets/cbc7e604-65d2-4eca-b862-7026a3bcbb8a" />
 
