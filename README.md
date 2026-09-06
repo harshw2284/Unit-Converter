@@ -95,9 +95,6 @@ docker logs unit-bench-app
 # Follow logs live
 docker logs -f unit-bench-app
 
-# Check the container's health status
-docker inspect --format='{{.State.Health.Status}}' unit-bench-app
-
 # Open a shell inside the running container (for debugging)
 docker exec -it unit-bench-app /bin/bash
 
