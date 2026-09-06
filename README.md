@@ -68,7 +68,7 @@ docker run -d -p 5000:5000 --name unit-bench-app unit-bench:latest
 
 - `-d` — run in the background (detached)
 - `-p 5000:5000` — map container port 5000 to host port 5000
-- `--name unit-bench-app` — a friendly name so later commands are easy to type
+- `--name unit-bench-app` — a friendly name 
 
 Then open **http://localhost:5000** in a browser — the app running
 inside the container is now reachable from the host machine.
