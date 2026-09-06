@@ -10,6 +10,12 @@ storage — packaged as a Docker container.
 
 <img width="1267" height="864" alt="Screenshot 2026-09-05 005911" src="https://github.com/user-attachments/assets/cbc7e604-65d2-4eca-b862-7026a3bcbb8a" />
 
+## Categories supported
+
+Length, Weight, Temperature, Volume, Area, Speed, Time, and Digital
+storage — each with common units (e.g. meters/feet/miles, °C/°F/K,
+liters/gallons, MB/GB, etc.). All conversions run in the browser, so
+no data is sent anywhere once the page has loaded.
 
 ## 1. What's inside
 
@@ -139,9 +145,3 @@ Python setup, this is the core Docker value demonstrated here:
   image without losing functionality — nothing about the app depends on
   state stored on the host.
 
-## 9. Categories supported
-
-Length, Weight, Temperature, Volume, Area, Speed, Time, and Digital
-storage — each with common units (e.g. meters/feet/miles, °C/°F/K,
-liters/gallons, MB/GB, etc.). All conversions run in the browser, so
-no data is sent anywhere once the page has loaded.
